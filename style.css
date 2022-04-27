@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .container {
@@ -23,6 +24,7 @@ nav {
 
 .nav-menus ul {
   display: flex;
+  padding: 0;
 }
 
 .nav-menus ul li {
@@ -36,22 +38,63 @@ nav {
   margin-right: 30px;
 }
 
-.nav-button {
-  display: flex;
-  height: 30px;
+.nav-button a {
+  text-decoration: none;
+  color: inherit;
   background-color: deeppink;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 12px;
-  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.nav-button img {
-  width: 30%;
+.nav-button a:hover {
+  background-color: white;
+  color: deeppink;
 }
 
-.nav-button p {
-  color: white;
-  margin: 0;
+.fa-arrow-right-to-bracket {
+  margin-right: 5px;
+}
+
+/* hero section style */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero-details {
+  width: 45%;
+  margin-top: 50px;
+}
+
+.hero-details h1 {
+  font-size: 5rem;
+  margin: 0 0 40px 0;
+}
+
+.hero-details a {
+  text-decoration: none;
+  color: inherit;
+  background-color: deeppink;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.hero-details a:hover {
+  background-color: white;
+  color: deeppink;
+}
+
+.fa-arrow-right-long {
   margin-left: 5px;
+}
+
+.hero-banner {
+  width: 45%;
+}
+
+.hero-banner img {
+  width: 100%;
 }
